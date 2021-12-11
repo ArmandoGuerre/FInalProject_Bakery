@@ -1,0 +1,376 @@
+*{margin:0;
+}
+
+body{background-color: black;}
+#wrapper{background-color: lightgray;
+    height: auto;}
+h1{color:white;
+    margin-top: 1%;
+    font-size:200%;
+}
+nav{height: 80px;
+    width: 100%;
+    background-color: black;
+    font-weight:bold;
+    margin-top:0px;
+}
+nav b{ text-decoration: none;
+}	
+.menuIcon{height:40px;
+          width:60px;
+          display: flex;
+          flex-direction:column;
+          justify-content: space-evenly;
+          align-items: bottom;
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+          margin-top:-25px;
+        
+}
+.bar{height: 15%;
+     width: 90%;
+     background-color: white;
+}
+.menu{position: fixed;
+    top: 70px;
+    right: -150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: grey;
+    min-height: 150px;
+}
+header{
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-containerv2 {
+    display: flex;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:20px;
+    justify-content: space-evenly;
+}
+.pan{ height: 600px;
+    width: 800px;
+    background-image: url(pan.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.abuela { height: 200px;
+    width: 350px;
+    background-image: url(abuela.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.tio { height: 200px;
+    width: 350px;
+    background-image: url(pan1.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.conchaNL{ height: 350px;
+    width: 200px;
+    background-image: url(conchaNL.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.bolioNL{ height: 350px;
+    width: 200px;
+    background-image: url(BolioNL.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.cochinitoNL{ height: 350px;
+    width: 200px;
+    background-image: url(cochintoNL.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+.flanNL{ height: 350px;
+    width: 200px;
+    background-image: url(flanNL.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    border:5px solid black;
+}
+footer{ text-align: center; 
+    font-style:italic; 
+    font-family:Georgia, "Times New Roman", serif;
+    font-size: 75%;
+    color:black;
+    background-color:lightgray;
+   }
+main{
+    border: 5px solid black;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:15px;
+
+}
+.extra{
+    color:black;
+    font-size:350%;
+}
+p{ text-align: center; 
+     
+    font-family:Georgia, "Times New Roman", serif;
+    font-size: 155%;
+    padding:.5em;
+}
+h3{ text-align: center; 
+    font-style: bold; 
+    font-family:Georgia, "Times New Roman", serif;
+    font-size: 155%;
+}
+address{
+    text-align: center; 
+    font-style: bold; 
+    font-family:Georgia, "Times New Roman", serif;
+    font-size: 145%;
+    padding:.5em;
+}
+table{border: 2px solid #3399CC;
+    border-collapse: collapse;
+}
+td, th{padding: 0.5em;
+     border: 2px solid #3399CC;
+}
+td{text-align: center;
+}
+.text{text-align: left;
+}
+tr:nth-of-type(odd){background-color: #F5FAFC;
+}
+form{display: flex;
+   flex-flow: column nowrap;
+   margin-left:30px;
+}
+input, textarea{margin-bottom: .5em;
+}
+#content { padding: 1px 20px 20px 30px;  
+    background-color:#ffffff;    
+}
+#content ul {list-style-position: inside;
+}
+a {text-decoration:none;
+}
+form{width: 60%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-columns: 6em 1fr;
+    }
+input[type="submit"]{grid-column: 2/3;
+                    width: 5em;}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+@media(min-width: 0px){
+    .flex-containerv2 {
+       flex-wrap:wrap;
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:20px;
+        justify-content: space-evenly;
+    }
+}
+@media(min-width: 1024px){
+    .flex-containerv2 {
+        flex-wrap:nowrap;
+        margin-left:5px;
+        margin-right:5px;
+        margin-top:20px;
+        justify-content: space-evenly;
+    }
+}
+
+/*THE FOLLOWING CSS IS FOR THE PRODUCTS PAGE*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal01 {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal02 {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal03 {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+  }
+  .modal-content01 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modal-content02 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .modal-content03 {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close01 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close02 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close03 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #myBtn { height: 200px;
+      width: 350px;
+      background-image: url(concha.jpg);
+      background-repeat: no-repeat;
+      background-size:100%;
+      border:5px solid black;
+      margin-left:30px;
+      cursor:pointer;
+  }
+  #myBtn01{ height: 200px;
+      width: 350px;
+      background-image: url(cochinito.jpg);
+      background-repeat: no-repeat;
+      background-size:100%;
+      border:5px solid black;
+      margin-left:30px;
+      cursor:pointer;
+  }
+  #myBtn02{ height: 200px;
+      width: 350px;
+      background-image: url(bolio.jpg);
+      background-repeat: no-repeat;
+      background-size:100%;
+      border:5px solid black;
+      margin-left:30px;
+      cursor:pointer;
+  }
+  #myBtn03{ height: 200px;
+      width: 350px;
+      background-image: url(flan.jpg);
+      background-repeat: no-repeat;
+      background-size:100%;
+      border:5px solid black;
+      margin-left:30px;
+      cursor:pointer;
+  }
+  .flex-containerv3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
